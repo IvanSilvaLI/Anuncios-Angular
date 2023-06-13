@@ -77,4 +77,30 @@ export class AnuncioComponent implements OnInit {
       });
     }
   }
+
+
+  get title(): any {
+    return this.anuncioForm.get('titulo');
+  }
+
+  get price(): any {
+    return this.anuncioForm.get('preco');
+  }
+
+  get description(): any {
+    return this.anuncioForm.get('descricao');
+  }
+
+
+  get date(): any {
+    return this.anuncioForm.get('dataValidade');
+  }
+
+  get status(): any {
+    return this.anuncioForm.get('status');
+  }
+
+  get image(): any {
+    return this.anuncioForm.get('imagem');
+  }
 }
