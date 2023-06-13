@@ -1,0 +1,74 @@
+<div class="bg-light-purple p-3 d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+<div class="container max-w-500 bg-light rounded">
+  <h2 class="mt-2">Cadastrar Anúncio</h2>
+
+  <form [formGroup]="anuncioForm" (ngSubmit)="criarAnuncio()" class="mt-4">
+    <div class="form-group">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" class="form-control" formControlName="titulo" required>
+    </div>
+    <div class="form-group">
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" class="form-control" formControlName="descricao" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="preco">Preço:</label>
+      <input type="number" id="preco" class="form-control" formControlName="preco" required>
+    </div>
+    <div class="form-group">
+      <label for="dataValidade">Data de Validade:</label>
+      <input type="date" id="dataValidade" class="form-control" formControlName="dataValidade" required>
+    </div>
+    <div class="form-group">
+      <label for="imagem">Imagem:</label>
+      <input type="text" id="imagem" class="form-control" formControlName="imagem" required>
+    </div>
+    <div class="form-group">
+      <label for="status">Status:</label>
+      <select id="status" class="form-control" formControlName="status" required>
+        <option value="ativo">Ativo</option>
+        <option value="desativo">Desativo</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Cadastrar</button>
+  </form>
+
+
+<div class="container mt-2">
+  <h2>Lista de Anúncios</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Título</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+        <th>Data de Validade</th>
+        <th>Imagem</th>
+        <th>Status</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let anuncio of anuncios">
+        <td>{{ anuncio.id }}</td>
+        <td>{{ anuncio.titulo }}</td>
+        <td>{{ anuncio.descricao }}</td>
+        <td>R$ {{ anuncio.preco }}</td>
+        <td>{{ anuncio.dataValidade }}</td>
+        <td>
+          <img [src]="anuncio.imagem" alt="Imagem do Anúncio" class="img-thumbnail" style="max-width: 100px;">
+        </td>
+        <td>{{ anuncio.status }}</td>
+        <td>
+          <button class="btn btn-primary" (click)="editarAnuncio(anuncio)">Editar</button>
+          <button class="btn btn-danger" (click)="deletarAnuncio(anuncio.id)">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>

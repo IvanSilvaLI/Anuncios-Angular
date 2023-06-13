@@ -1,0 +1,19 @@
+.card {
+  max-width: 300px; /* Adjust the max-width as per your preference */
+  margin: 10px;
+}
+
+.card-img-top {
+  max-height: 200px; /* Adjust the max-height as per your preference */
+  object-fit: cover;
+}
+
+.bg-light-purple {
+  background-color: #e2d6ff;
+}
+
+.max-w-500 {
+  max-width: 1100px;
+  min-width: 600px;
+  margin: 0 auto;
+}

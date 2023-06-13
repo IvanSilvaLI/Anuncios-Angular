@@ -1,0 +1,23 @@
+<div class="bg-light-purple p-3 d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+
+<div class="container max-w-500 bg-light rounded ">
+
+    <h2 class="text-center mt-3">Anuncio de Carros</h2>
+    <div class="row">
+
+      <div class="col-md-4" *ngFor="let anuncio of anuncios">
+        <div class="card">
+          <img class="card-img-top" [src]="anuncio.imagem" alt="Imagem do Anúncio">
+          <div class="card-body">
+            <h5 class="card-title">{{ anuncio.titulo }}</h5>
+            <p class="card-text">{{ anuncio.descricao }}</p>
+            <p class="card-text">Preço: R$ {{ anuncio.preco }}</p>
+            <p class="card-text">Data de Validade: {{ anuncio.dataValidade }}</p>
+            <p class="card-text">Status: {{ anuncio.status }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

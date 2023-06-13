@@ -1,0 +1,31 @@
+{
+  "anuncios": [
+    {
+      "id": 1,
+      "titulo": "BMW X5",
+      "descricao": "O BMW Série 5 Sedã representa o ponto máximo do sedã executivo e esportivo.",
+      "preco": 100,
+      "dataValidade": "2023-06-30",
+      "imagem": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgM-U3vxfM-K5Rs2iEyJ7BTnrY2B8_i70bIz6W_nE3B2khJ59ezZWrQMy4NQ63Y4GdMCKStT1h2-wNZ8GjZ2QlJFTh4PNGW7kfOO0t9Rqct36Z2LoOjRHBlkPDaD18GNRsVFFeC3Q_aXnLet8Us7Rr94cPJBfK18-g40ueuuPfn89OG2-rPLLBSbCOc/s2560/Novos-BMW-X5-X6-2026.jpg",
+      "status": "ativo"
+    },
+    {
+      "id": 2,
+      "titulo": "Taycan GTS",
+      "descricao": "Taycan GTS agrega agora emoções ainda mais intensas à experiência de Porsche. ",
+      "preco": 5000000,
+      "dataValidade": "2023-07-15",
+      "imagem": "https://quatrorodas.abril.com.br/wp-content/uploads/2021/11/PORSCHE-TAYCAN-GTS-2.jpg?quality=70&strip=info&w=1280&h=720&crop=1",
+      "status": "ativo"
+    },
+    {
+      "id": 3,
+      "titulo": "McLaren GT",
+      "descricao": "Dinâmico e elegante. O novo McLaren GT redesenha as linhas do Grand Tourer.",
+      "preco": 200,
+      "dataValidade": "2023-06-30",
+      "imagem": "https://cdn.motor1.com/images/mgl/J76yK/s1/2019-mclaren-gt-lead-image.jpg",
+      "status": "desativo"
+    }
+  ]
+}
